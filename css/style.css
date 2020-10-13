@@ -1,10 +1,15 @@
+:root {
+  --primary-color: #1a4968;
+  --gray: #c7c7c7;
+}
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 header {
   height: 100vh;
-  background-image: url("../img/10.jpg");
+  background-image: url("../img/14.jpg");
   background-size: cover;
   background-position: center;
   padding: 0px 100px;
@@ -50,4 +55,88 @@ header nav .leng {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+header .center-head {
+  display: flex;
+  flex-flow: row;
+  height: 60%;
+  margin-top: 30px;
+}
+header .center-head .header-text {
+  width: 70%;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-top: 50px;
+}
+header .center-head .ad-header {
+  width: 30%;
+}
+header .center-head .ad-header .ad-card {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+}
+header .center-head .ad-header .ad-card .card-title {
+  background-color: var(--primary-color);
+  color: white;
+  padding-left: 50px;
+  width: 300px;
+  min-width: 300px;
+  position: relative;
+}
+header .center-head .ad-header .ad-card .card-title h2:nth-child(1) {
+  position: absolute;
+  top: 20px;
+}
+header .center-head .ad-header .ad-card .card-title h2:nth-child(3) {
+  position: absolute;
+  bottom: 45px;
+}
+header .center-head .ad-header .ad-card .card-title h2:nth-child(4) {
+  position: absolute;
+  bottom: 20px;
+  color: var(--gray);
+}
+header .center-head .ad-header .ad-card .card-title svg {
+  position: absolute;
+  bottom: 100px;
+  width: 60px;
+}
+header .center-head .ad-header .ad-card .card-img {
+  width: 700px;
+  min-width: 700px;
+}
+header .center-head .ad-header .ad-card .card-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+header .arrow-head {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  color: white;
+}
+header .arrow-head .arrow-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .arrow-head .arrow-text h3,
+header .arrow-head .arrow-text h2 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 300;
+}
+header .arrow-head .arrow-text h2 {
+  font-size: 35px;
+}
+header .arrow-head svg {
+  width: 85px;
+  height: 85px;
+  margin-left: 20px;
+  stroke-width: 1px;
 }
