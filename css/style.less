@@ -200,16 +200,17 @@ header {
 
     }
     .city-content:nth-child(1){
-      background-image: url(../img/13.jpg);
+      background-image: url(../img/italy.jpg);
+      background-position: center;
     }
     .city-content:nth-child(2){
-      background-image: url(../img/13.jpg);
+      background-image: url(../img/greece.jpg);
     }
     .city-content:nth-child(3){
-      background-image: url(../img/13.jpg);
+      background-image: url(../img/croatia.jpg);
     }
     .city-content:nth-child(4){
-      background-image: url(../img/13.jpg);
+      background-image: url(../img/new-york.jpg);
     }
 
     h2 {
@@ -230,5 +231,86 @@ header {
       padding-left: 30px;
       text-shadow: 0 0 6px #0000004a;
     }
+  }
+}
+
+.city-container{
+  margin: 160px 0px;
+  position: relative;
+  .city-info{
+    padding: 0px 100px;
+    display: flex;
+    flex-flow: row;
+    z-index: 1;
+    .city-img{
+      width: 40%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .city-text {
+      width: 40%;
+      padding: 0px 100px;
+      background-color: white;
+      h3{
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      h2 {
+        margin: 25px 0px;
+        font-weight: 600;
+        font-size: 40px;
+      }
+      .city-options {
+        display: flex;
+        flex-flow: row;
+
+        svg {
+          width: 30px;
+          margin-right: 18px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        h2 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-right: 40px;
+        }
+      }
+
+      p {
+        margin-bottom: 50px;
+        font-size: 19px;
+      }
+
+      .btn-city {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        padding: 17px 70px;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        width: 210px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .city-bg {
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+    opacity: 0.38;
   }
 }
