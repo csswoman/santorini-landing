@@ -288,3 +288,58 @@ header .arrow-head svg {
   z-index: -10;
   opacity: 0.38;
 }
+.services-container {
+  display: flex;
+  flex-flow: column;
+  padding: 0px 100px;
+  margin-bottom: 100px;
+}
+.services-container .services-title {
+  margin-bottom: 120px;
+  width: 100%;
+}
+.services-container .services-title h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  position: relative;
+}
+.services-container .services-title h2:after {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  bottom: -9px;
+  right: 50px;
+}
+.services-container .services-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.services-container .services-list .services-details {
+  width: 33%;
+  position: relative;
+}
+.services-container .services-list .services-details .icon {
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.services-container .services-list .services-details h2 {
+  padding-left: 100px;
+  padding-right: 30px;
+  margin-top: 0px;
+}
+.services-container .services-list .services-details p {
+  padding-left: 100px;
+  margin-bottom: 100px;
+  padding-right: 40px;
+  font-size: 15px;
+  font-weight: 400;
+}
