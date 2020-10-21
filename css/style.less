@@ -452,3 +452,153 @@ footer {
     }
   }
 }
+
+#toggle {
+  display: none;
+}
+
+.res-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .res-menu {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  header {
+    height: fit-content;
+    nav {
+      flex-flow: column;
+
+      .logo{
+        min-width: min-content;
+      }
+      .menu{
+        display: none;
+        background-color: var(--primary-color);
+        padding-top: 30px;
+        ul{
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+          li{
+            width: 100%;
+            text-align: center;
+            border-bottom: 3px solid rgb(255, 255, 255);
+            a {
+              justify-content: center;
+              padding: 14px 0px;
+            }
+          }
+        }
+      }
+
+      .leng {
+        display: none;
+        background-color: var(--primary-color);
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: fit-content;
+      }
+    }
+
+    .center-head .header-text{
+      width: 100%;
+      margin: 0;
+      h1 {
+        margin: 0;
+        font-size: 76px;
+        margin-bottom: 80px;
+        text-align: center;
+      }
+    }
+
+    .ad-header {
+      display: none;
+    }
+    .arrow-head {
+      display: none;
+    }
+  }
+
+  .cities-container {
+    .cities-title {
+      width: 50%;
+    }
+    .city-card {
+      flex-flow: row wrap;
+      .city-content {
+        width: 50%;
+      }
+    }
+  }
+
+  .city-container {
+    margin: 180px 0px 50px 0px;
+    .city-info {
+      flex-flow: column;
+        .city-img {
+        width: 100%;
+        }
+        .city-text {
+          width: 100%;
+          padding: 30px 0px;
+        }
+
+        .btn-city {
+          display: flex;
+          width: auto;
+          justify-content: center;
+        }
+    }
+    .city-bg {
+      display: none;
+  }
+}
+
+.services-container {
+  .services-list {
+    flex-flow: column;
+    .services-details {
+      width: 100%;
+      p {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+footer .footer-container {
+  flex-flow: column;
+  .footer-col-1, .footer-col-2,
+  .footer-col-3, .footer-col-4 {
+    width: 100%;
+  }
+}
+
+}
+
+#toggle:checked ~ .menu{
+  display: flex;
+  width: 200%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+#toggle:checked ~ .leng{
+  display: flex;
+  width: 200%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}

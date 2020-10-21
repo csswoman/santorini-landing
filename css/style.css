@@ -422,3 +422,135 @@ footer .footer-container .footer-col-4 form input[type="submit"] {
   font-size: 16px;
   font-weight: 400;
 }
+#toggle {
+  display: none;
+}
+.res-menu {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .res-menu {
+    display: flex;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+  header {
+    height: fit-content;
+  }
+  header nav {
+    flex-flow: column;
+  }
+  header nav .logo {
+    min-width: min-content;
+  }
+  header nav .menu {
+    display: none;
+    background-color: var(--primary-color);
+    padding-top: 30px;
+  }
+  header nav .menu ul {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  header nav .menu ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;
+  }
+  header nav .menu ul li a {
+    justify-content: center;
+    padding: 14px 0px;
+  }
+  header nav .leng {
+    display: none;
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: fit-content;
+  }
+  header .center-head .header-text {
+    width: 100%;
+    margin: 0;
+  }
+  header .center-head .header-text h1 {
+    margin: 0;
+    font-size: 76px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  header .ad-header {
+    display: none;
+  }
+  header .arrow-head {
+    display: none;
+  }
+  .cities-container .cities-title {
+    width: 50%;
+  }
+  .cities-container .city-card {
+    flex-flow: row wrap;
+  }
+  .cities-container .city-card .city-content {
+    width: 50%;
+  }
+  .city-container {
+    margin: 180px 0px 50px 0px;
+  }
+  .city-container .city-info {
+    flex-flow: column;
+  }
+  .city-container .city-info .city-img {
+    width: 100%;
+  }
+  .city-container .city-info .city-text {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .city-container .city-info .btn-city {
+    display: flex;
+    width: auto;
+    justify-content: center;
+  }
+  .city-container .city-bg {
+    display: none;
+  }
+  .services-container .services-list {
+    flex-flow: column;
+  }
+  .services-container .services-list .services-details {
+    width: 100%;
+  }
+  .services-container .services-list .services-details p {
+    padding-right: 0;
+  }
+  footer .footer-container {
+    flex-flow: column;
+  }
+  footer .footer-container .footer-col-1,
+  footer .footer-container .footer-col-2,
+  footer .footer-container .footer-col-3,
+  footer .footer-container .footer-col-4 {
+    width: 100%;
+  }
+}
+#toggle:checked ~ .menu {
+  display: flex;
+  width: 200%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+#toggle:checked ~ .leng {
+  display: flex;
+  width: 200%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
